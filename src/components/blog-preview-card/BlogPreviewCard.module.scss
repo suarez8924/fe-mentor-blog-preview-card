@@ -73,28 +73,30 @@
   }
 
   @media (min-width: 768px) {
-    .label {
-      font-size: 1.4rem;
-      height: 2.9rem;
-    }
-
-    .publishedDate {
-      font-size: 1.4rem;
-    }
-
-    .articleLink {
-      &:hover,
-      &:focus-within {
-        color: colors.$color-yellow;
+    .cardMainContent {
+      .label {
+        font-size: 1.4rem;
+        height: 2.9rem;
       }
-    }
 
-    .title {
-      font-size: 2.4rem;
-    }
+      .publishedDate {
+        font-size: 1.4rem;
+      }
 
-    .description {
-      font-size: 1.6rem;
+      .articleLink {
+        &:hover,
+        &:focus-within {
+          color: colors.$color-yellow;
+        }
+      }
+
+      .title {
+        font-size: 2.4rem;
+      }
+
+      .description {
+        font-size: 1.6rem;
+      }
     }
   }
 }
