@@ -1,0 +1,100 @@
+@use '../../styles/colors';
+
+.blogPreviewCard {
+  background-color: colors.$color-white;
+  border-radius: 2rem;
+  border: 1px solid colors.$color-black;
+  padding: 2.4rem;
+  max-width: 38.4rem;
+  box-shadow: 16px 16px 0px colors.$color-black;
+
+  .articleImage {
+    display: block;
+    width: 100%;
+    border-radius: 1rem;
+  }
+
+  .cardMainContent {
+    margin-top: 2.4rem;
+
+    .label {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0.4rem;
+      background-color: colors.$color-yellow;
+      padding: 0 1.2rem;
+      font-size: 1.2rem;
+      font-weight: 800;
+      height: 2.6rem;
+    }
+
+    .publishedDate {
+      font-size: 1.2rem;
+      margin-top: 1.2rem;
+    }
+
+    .articleLink {
+      display: inline-block;
+      text-decoration: none;
+      margin-top: 1.2rem;
+      color: currentColor;
+      transition: color 0.1s ease-out;
+    }
+
+    .title {
+      font-size: 2rem;
+      font-weight: 800;
+    }
+
+    .description {
+      font-size: 1.4rem;
+      color: colors.$color-grey;
+      margin-top: 1.2rem;
+    }
+
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      margin-top: 2.4rem;
+
+      img {
+        display: inline-block;
+        width: 3.2rem;
+        height: 3.2rem;
+      }
+
+      .userName {
+        font-size: 1.4rem;
+        font-weight: 800;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .label {
+      font-size: 1.4rem;
+      height: 2.9rem;
+    }
+
+    .publishedDate {
+      font-size: 1.4rem;
+    }
+
+    .articleLink {
+      &:hover,
+      &:focus-within {
+        color: colors.$color-yellow;
+      }
+    }
+
+    .title {
+      font-size: 2.4rem;
+    }
+
+    .description {
+      font-size: 1.6rem;
+    }
+  }
+}
