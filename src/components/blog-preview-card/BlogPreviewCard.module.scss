@@ -81,7 +81,12 @@
   }
 
   @media (min-width: 768px) {
-    box-shadow: 16px 16px 0px colors.$color-black;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+
+    &:hover {
+      box-shadow: 16px 16px 0px colors.$color-black;
+      transform: translate(-0.4rem, -0.4rem);
+    }
 
     .cardMainContent {
       .label {
