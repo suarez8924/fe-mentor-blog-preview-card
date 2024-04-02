@@ -28,7 +28,7 @@ const BlogPreviewCard = ({ article }: BlogPreviewCardProps) => {
           href={articleLink || ''}
           target="_blank"
         >
-          <h2 className={styles.title}>{title}</h2>
+          <h1 className={styles.title}>{title}</h1>
         </a>
         <p className={styles.description}>{description}</p>
         <div className={styles.user}>
