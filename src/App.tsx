@@ -13,7 +13,7 @@ const ARTICLE: Article = {
   publishDate: new Date(2023, 11, 21),
   title: 'HTML & CSS foundations',
   description:
-    '  These languages are the backbone of every website, defining structure, content, and presentation.',
+    'These languages are the backbone of every website, defining structure, content, and presentation.',
   articleLink: 'https://www.frontendmentor.io',
   user: {
     fullName: 'Greg Hooper',
