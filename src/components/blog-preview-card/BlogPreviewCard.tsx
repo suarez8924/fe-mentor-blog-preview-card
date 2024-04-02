@@ -11,11 +11,13 @@ const BlogPreviewCard = ({ article }: BlogPreviewCardProps) => {
     article;
   return (
     <div className={styles.blogPreviewCard}>
-      <img
-        className={styles.articleImage}
-        src={image.src}
-        alt={image.alt || ''}
-      />
+      <picture className={styles.imageWrapper}>
+        <img
+          className={styles.articleImage}
+          src={image.src}
+          alt={image.alt || ''}
+        />
+      </picture>
       <div className={styles.cardMainContent}>
         {label && <span className={styles.label}>{label}</span>}
         <p className={styles.publishedDate}>
